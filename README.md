@@ -7,11 +7,11 @@ test on TEX5288  8051 Chip
 
 Needed the REG320.h from here instead of teacher's example code.
 I had write some NEW in it.
-EX:
-    /*LCM*/
-    sbit RS_LCM	= P3^5;
-    sbit RW_LCM	= P3^6;
-    sbit EN_LCM	= P3^7;
+
+    EX: /*LCM*/
+        sbit RS_LCM	= P3^5;
+        sbit RW_LCM	= P3^6;
+        sbit EN_LCM	= P3^7;
 
 ====================================
 
