@@ -83,13 +83,16 @@ void intt() interrupt 3 using 3
 {
 	TH1 = HTimer1;
 	TL1 = LTimer1;
+
 	if(timeCount >= timeFull && pao_ma_run == 1){
 		pao_ma_light();
 		timeCount = 0;
-	}
+	}//決定要不要跑跑馬燈
+
 	if(dgt_clk_rest == 0){
 		digitalclock();
-	}
+	}//決定要不要跑時鐘
+
 	display();
 	timeCount += 2;
 	return;
@@ -98,6 +101,8 @@ void intt() interrupt 3 using 3
 void pao_ma_light()
 {
 	unsigned char tmp = 0;
+
+	//直接搬字元
 	tmp = row1[7];
 	row1[7] = row1[6];
 	row1[6] = row1[5];
@@ -113,13 +118,19 @@ void pao_ma_light()
 void digitalclock()
 {
 	unsigned char time[6];
+
+	//先把ASCII轉成值
 	time[0] = row1[8]-48;
 	time[1] = row1[9]-48;
 	time[2] = row1[11]-48;
 	time[3] = row1[12]-48;
 	time[4] = row1[14]-48;
 	time[5] = row1[15]-48;
+
+	//時間+1
 	time[5]++;
+
+	//進位
 	if(time[5] > 9){
 		time[4] += time[5]/10;
 	}
@@ -144,6 +155,8 @@ void digitalclock()
 	time[3] = time[3]%10;
 	time[2] = time[2]%6;
 	time[1] = time[1]%10;
+
+	//把值轉回ASCII 放到 dispaly buffer
 	row1[8] = time[0]+48;
 	row1[9] = time[1]+48;
 	row1[11]= time[2]+48;
@@ -218,6 +231,7 @@ unsigned char key(void)
 		display();
 		keypress = 255;
 
+		//掃描第一行
 		P1 = 0xef;
 		P1 = 0xef;
 		if(P1 == 0xee){
@@ -237,6 +251,7 @@ unsigned char key(void)
 			keypress = 0;
 		}
 
+		//掃描第二行
 		P1 = 0xdf;
 		P1 = 0xdf;
 		if(P1 == 0xde){
@@ -256,6 +271,7 @@ unsigned char key(void)
 			keypress = 0;
 		}
 
+		//掃描第三行
 		P1 = 0xbf;
 		P1 = 0xbf;
 		if(P1 == 0xbe){
@@ -275,6 +291,7 @@ unsigned char key(void)
 			keypress = 0;
 		}
 
+		//掃描第四行
 		P1 = 0x7f;
 		P1 = 0x7f;
 		if(P1 == 0x7E){
@@ -304,6 +321,8 @@ unsigned char key(void)
 			keyvalue = 255;
 			keypress = 0;
 			dgt_clk_rest = 1;
+
+			//時間重置
 			row1[8]  = '0';
 			row1[9]  = '0';
 			row1[11] = '0';
@@ -318,11 +337,13 @@ unsigned char key(void)
 			pao_ma_run = 0;
 			keyvalue = 255;
 			keypress = 0;
-			row1[7] = '2';
-			row1[6] = '3';
-			row1[5] = '7';
-			row1[4] = '2';
-			row1[3] = '8';
+
+			//跑馬燈重置
+			row1[7] = '6';
+			row1[6] = '5';
+			row1[5] = '4';
+			row1[4] = '3';
+			row1[3] = '2';
 			row1[2] = '1';
 			row1[1] = '0';
 			row1[0] = 'D';
