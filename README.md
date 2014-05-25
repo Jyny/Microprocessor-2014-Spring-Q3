@@ -26,7 +26,14 @@ And get the license fellow the step here:
 
 ===================================
 
-My environment settings
+My hardware environment settings
+
+    P0 for LCM dateline
+    P1 for 4x4 keypad
+    p3 for LCM cmdline
+    //LCM 16 char per row, 2
+    
+My software environment settings
 
     BL51 Local:
         Code Range : 0X0000-0X3FFF
