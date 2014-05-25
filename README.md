@@ -1,6 +1,7 @@
 Microprocessor-2014-Spring-Q3
 =====================================
-test on TEX5288  8051 Chip
+Test on TEX5288  8051 Chip
+
 =====================================
 
 Needed the REG320.h from here instead of teacher's example code.
