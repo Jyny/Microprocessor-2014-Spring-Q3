@@ -15,7 +15,7 @@ EX:
 
 ====================================
 
-To compile the successful Q3.c in keil C
+To compile successful the Q3.c in keil C
 You will need a license to upgrade from original free limited edition
 
 You can get PSN key here:
