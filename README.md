@@ -1,8 +1,6 @@
 Microprocessor-2014-Spring-Q3
 =====================================
-
 test on TEX5288  8051 Chip
-
 =====================================
 
 Needed the REG320.h from here instead of teacher's example code.
@@ -16,6 +14,7 @@ I had write some NEW in it.
 ====================================
 
 To compile successful the Q3.c in keil C
+(beacause of the code size in free edition is limited in 2K)
 You will need a license to upgrade from original free limited edition
 
 You can get PSN key here:
@@ -25,3 +24,4 @@ And get the license fellow the step here:
 http://top.ampbb.net/2013/08/usb-silicon-labs-c8051.html
 
 ===================================
+
