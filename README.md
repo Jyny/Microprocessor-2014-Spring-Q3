@@ -18,11 +18,9 @@ To compile successful the Q3.c in keil C
 You will need a license to upgrade from original free limited edition
 
 You can get PSN key here:
-
     http://pages.silabs.com/lp-keil-pk51.html
 
 And get the license fellow the step here:
-
     http://top.ampbb.net/2013/08/usb-silicon-labs-c8051.html
 
 ===================================
