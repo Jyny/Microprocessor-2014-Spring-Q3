@@ -14,9 +14,9 @@ I had write some NEW in it.
 
 ====================================
 
-To compile successful the Q3.c in keil C
+To compile successful the Q3.c in keil C,
+You will need a license to upgrade from original free limited edition.
 (beacause of the code size in free edition is limited in 2K)
-You will need a license to upgrade from original free limited edition
 
 You can get PSN key here:
     http://pages.silabs.com/lp-keil-pk51.html
