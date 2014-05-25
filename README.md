@@ -25,3 +25,10 @@ http://top.ampbb.net/2013/08/usb-silicon-labs-c8051.html
 
 ===================================
 
+My environment settings
+
+    BL51 Local:
+        Code Range : 0X0000-0X3FFF
+        Xdata Range : 0XFF00-0XFFFF
+        
+        Pdata : 0XFF00
