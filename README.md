@@ -6,7 +6,7 @@ Test on TEX5288  8051 Chip
 
 Needed the REG320.h from here instead of teacher's example code.
 
-It been created some NEW in it.
+It been added some NEW in it.
 
     EX: /*LCM*/
         sbit RS_LCM	= P3^5;
