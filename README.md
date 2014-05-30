@@ -5,7 +5,7 @@ Test on TEX5288  8051 Chip
 =====================================
 
 Needed the REG320.h from here instead of teacher's example code.
-I had write some NEW in it.
+It been writed some NEW in it.
 
     EX: /*LCM*/
         sbit RS_LCM	= P3^5;
@@ -16,7 +16,7 @@ I had write some NEW in it.
 
 To compile successful the Q3.c in keil C,
 You will need a license to upgrade from original free limited edition.
-(because of the code size in free edition is limited in 2K)
+(because of code size in free edition is limited in 2K)
 
 You can get PSN key here:
     http://pages.silabs.com/lp-keil-pk51.html
