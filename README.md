@@ -10,7 +10,7 @@ Features
 
 3.16digit calculator    (LCM row2 16digit)
 
-without RTOS and run there features at same time
+without RTOS and run there features realtime
 
 =====================================
 
