@@ -2,15 +2,14 @@ Microprocessor-2014-Spring-Q3
 =====================================
 Test on TEX5288  8051 Chip
 
-Features
+##Features
 
-1.Scrolling text        (LCM row1 left 8 digit)
+1.Scrolling text        (LCM row1 left 8 digit)    
+2.clock                 (LCM row1 right 8 digit)    
+3.16digit calculator    (LCM row2 16digit)    
+    16digit on 8bit MCU big number!!    
 
-2.clock                 (LCM row1 right 8 digit)
-
-3.16digit calculator    (LCM row2 16digit)
-
-without RTOS and run there features realtime
+all features without RTOS and run there features realtime
 
 =====================================
 
